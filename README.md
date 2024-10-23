@@ -1,5 +1,7 @@
 # Java GUI Login System
 
+## Faith Runesu H230278R
+
 A complete login and registration system built with Java Swing, featuring a graphical user interface, user data persistence, and basic security features.
 
 ## 📋 Table of Contents
