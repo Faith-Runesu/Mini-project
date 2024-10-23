@@ -11,16 +11,19 @@ public class UserManager {
         loadUsers();
     }
 
-    public boolean registerUser(String username, String password, String email) {
+    public boolean registerUser(String username, String password, String email, String RegNumber) {
         // Check if username already exists
         for (User user : users) {
             if (user.getUsername().equals(username)) {
                 return false;
             }
+            if (user.getEmail().equals(email)) {
+                return false;
+            }
         }
 
         // Add new user
-        users.add(new User(username, password, email));
+        users.add(new User(username, password, email, RegNumber));
         saveUsers();
         return true;
     }
@@ -65,8 +68,8 @@ public class UserManager {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
-                if (parts.length == 3) {
-                    users.add(new User(parts[0], parts[1], parts[2]));
+                if (parts.length == 4) {
+                    users.add(new User(parts[0], parts[1], parts[2], parts[3]));
                 }
             }
         } catch (IOException e) {
