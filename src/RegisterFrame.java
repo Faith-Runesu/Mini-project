@@ -131,7 +131,7 @@ public class RegisterFrame extends JFrame {
 
         if (regNumber.length() != 8) {  // Basic registration number validation
             JOptionPane.showMessageDialog(this,
-                    "Registration number must be at least 8 characters",
+                    "Registration number must be 8 characters",
                     "Error",
                     JOptionPane.ERROR_MESSAGE);
             return;
@@ -146,19 +146,6 @@ public class RegisterFrame extends JFrame {
         } else {
             JOptionPane.showMessageDialog(this,
                     "Username already exists",
-                    "Error",
-                    JOptionPane.ERROR_MESSAGE);
-        }
-        if (userManager.registerUser(username, password, email, regNumber)) {
-            JOptionPane.showMessageDialog(this,
-                    "Registration successful!",
-                    "Success",
-                    JOptionPane.INFORMATION_MESSAGE);
-            new LoginFrame(userManager);
-            dispose();
-        } else {
-            JOptionPane.showMessageDialog(this,
-                    "Username already exists or email already in use contact the Administrator",
                     "Error",
                     JOptionPane.ERROR_MESSAGE);
         }

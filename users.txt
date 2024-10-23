@@ -1,2 +1,3 @@
-foo,fooo,faithtrunesu@gmail.com,null
-kuku,kukuu,adsfdgfhjk@dsfdgfh,h230716x
+foo,$2a$10$y7iTKDCnGN2HTF1/5Eh6EuPACb1stag45YXrSbco9zAPu8ftV1gF2,foo@gmail.com,h230716x
+nda,$2a$10$bbFe5yriAGhG1rGjVTp53ejLO8fgzIKROe1a2OCKYYdKIlTTLe6z6,ndaa@gmail.com,h230716x
+cebi,$2a$10$UY15olUWNt5x203N3eLzHe7R1kk9H5MczhwHA2C4cH2DJ4RgpNK4i,c@gmail.com,h2304569
